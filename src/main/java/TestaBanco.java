@@ -3,13 +3,13 @@ public class TestaBanco {
         Cliente guilherme = new Cliente();
         Conta novaConta = new Conta();
 
-        guilherme.nome = "Guilherme Henrique";
-        guilherme.cpf = "123.456.789-10";
-        guilherme.profissao = "programador";
+        guilherme.setNome("Guilherme Henrique");
+        guilherme.setCpf("123.456.789-10");
+        guilherme.setProfissao("programador");
 
         novaConta.deposita(200);
-        novaConta.titular = guilherme;
+        novaConta.setTitular(guilherme);
 
-        System.out.println(novaConta.titular.nome);
+        System.out.println(novaConta.getTitular().getNome());
     }
 }
