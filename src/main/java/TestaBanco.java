@@ -1,7 +1,7 @@
 public class TestaBanco {
     public static void main(String[] args) {
         Cliente guilherme = new Cliente();
-        Conta novaConta = new Conta(10 ,10);
+        Conta novaConta = new ContaCorrente(10 ,10);
 
         guilherme.setNome("Guilherme Henrique");
         guilherme.setCpf("123.456.789-10");

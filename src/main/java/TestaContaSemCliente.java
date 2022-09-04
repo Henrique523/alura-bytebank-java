@@ -1,6 +1,6 @@
 public class TestaContaSemCliente {
     public static void main(String[] args) {
-        Conta contaDaMarcela = new Conta(10, 10);
+        Conta contaDaMarcela = new ContaCorrente(10, 10);
 
         System.out.println(contaDaMarcela.getSaldo());
 

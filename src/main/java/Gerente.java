@@ -1,5 +1,5 @@
 // Gerente eh um funcionário. Gerente herda da classe funcionário
-public class Gerente extends Funcionario {
+public class Gerente extends Autenticavel {
     private int senha;
 
     public int getSenha() {
@@ -15,6 +15,6 @@ public class Gerente extends Funcionario {
     }
 
     public double getBonificacao() {
-        return super.getBonificacao() + super.getSalario();
+        return super.getSalario();
     }
 }

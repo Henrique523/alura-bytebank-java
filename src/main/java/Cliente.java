@@ -1,7 +1,12 @@
-public class Cliente {
+public class Cliente extends Autenticavel {
     private String nome;
     private String cpf;
     private String profissao;
+
+    @Override
+    public double getBonificacao() {
+        return 0;
+    }
 
     public String getNome() {
         return this.nome;
