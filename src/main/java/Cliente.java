@@ -1,11 +1,14 @@
-public class Cliente extends Autenticavel {
+public class Cliente implements Autenticavel {
     private String nome;
     private String cpf;
     private String profissao;
 
-    @Override
-    public double getBonificacao() {
-        return 0;
+    private int senha;
+
+    private AutenticacaoUtil util;
+
+    public Cliente() {
+        this.util = new AutenticacaoUtil();
     }
 
     public String getNome() {
@@ -30,5 +33,15 @@ public class Cliente extends Autenticavel {
 
     public void setProfissao(String profissao) {
         this.profissao = profissao;
+    }
+
+    @Override
+    public void setSenha(int senha) {
+        this.util.setSenha(senha);
+    }
+
+    @Override
+    public boolean autentica(int senha) {
+        return this.util.autentica(senha);
     }
 }

@@ -1,13 +1,18 @@
-public class Administrador extends Autenticavel {
+public class Administrador extends Funcionario implements Autenticavel {
 
     private int senha;
+    private AutenticacaoUtil util;
+
+    public Administrador() {
+        this.util = new AutenticacaoUtil();
+    }
 
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.util.setSenha(senha);
     }
 
     public boolean autentica(int senha) {
-        return this.senha == senha;
+        return this.util.autentica(senha);
     }
 
     @Override

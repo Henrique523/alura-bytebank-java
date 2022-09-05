@@ -1,17 +1,17 @@
-// Gerente eh um funcionário. Gerente herda da classe funcionário
-public class Gerente extends Autenticavel {
+public class Gerente extends Funcionario implements Autenticavel {
     private int senha;
+    private AutenticacaoUtil util;
 
-    public int getSenha() {
-        return senha;
+    public Gerente() {
+        this.util = new AutenticacaoUtil();
     }
 
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.util.setSenha(senha);
     }
 
     public boolean autentica(int senha) {
-        return this.senha == senha;
+        return this.util.autentica(senha);
     }
 
     public double getBonificacao() {
