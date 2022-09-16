@@ -1,3 +1,8 @@
+package teste;
+
+import modelo.Conta;
+import modelo.ContaCorrente;
+
 public class TestaMetodo {
     public static void main(String[] args) {
         Conta conta = new ContaCorrente(4336, 550514);

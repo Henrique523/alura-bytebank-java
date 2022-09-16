@@ -1,3 +1,5 @@
+package modelo;
+
 public class CriaConta {
     public static void main(String[] args) {
         Conta primeiraConta = new ContaCorrente(10, 10);

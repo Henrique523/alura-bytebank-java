@@ -1,3 +1,5 @@
+package modelo;
+
 public class Cliente implements Autenticavel {
     private String nome;
     private String cpf;

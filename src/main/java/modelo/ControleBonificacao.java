@@ -1,3 +1,5 @@
+package modelo;
+
 public class ControleBonificacao {
     private double soma;
 

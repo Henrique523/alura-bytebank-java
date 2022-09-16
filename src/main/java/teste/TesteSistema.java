@@ -1,3 +1,9 @@
+package teste;
+
+import modelo.Administrador;
+import modelo.Gerente;
+import modelo.SistemaInterno;
+
 public class TesteSistema {
     public static void main(String[] args) {
         Gerente g = new Gerente();

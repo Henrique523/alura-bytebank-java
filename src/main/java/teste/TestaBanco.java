@@ -1,3 +1,9 @@
+package teste;
+
+import modelo.Cliente;
+import modelo.Conta;
+import modelo.ContaCorrente;
+
 public class TestaBanco {
     public static void main(String[] args) {
         Cliente guilherme = new Cliente();

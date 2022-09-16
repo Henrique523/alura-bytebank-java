@@ -1,3 +1,5 @@
+package modelo;
+
 public class AutenticacaoUtil {
     private int senha;
 

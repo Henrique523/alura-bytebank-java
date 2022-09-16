@@ -1,3 +1,9 @@
+package teste;
+
+import modelo.Cliente;
+import modelo.Conta;
+import modelo.ContaCorrente;
+
 public class TestaContaSemCliente {
     public static void main(String[] args) {
         Conta contaDaMarcela = new ContaCorrente(10, 10);
