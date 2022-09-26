@@ -74,4 +74,9 @@ public abstract class Conta {
         return Conta.total;
     }
 
+    @Override
+    public boolean equals(Object ref) {
+        return this.agencia == ((Conta) ref).getAgencia() && this.numero == ((Conta) ref).getNumero();
+    }
+
 }
